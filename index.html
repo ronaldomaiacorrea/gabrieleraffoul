@@ -1,113 +1,153 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="main.css">
-<style>
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-</style>
-<title>Gabriele Raffoul | Welcome</title>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+	</style>
+
+	<title>Gabriele Raffoul | Welcome</title>
 </head>
 
-<body>
-	<header>
-		<div class="container">
-			<img src="logo.png" alt="Logo" id="logo"/>
-			<nav id="menu">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="#About_me">ABOUT ME</a></li>
-					<li><a href="#Services">SERVICES</a></li>
-					<li><a href="#">LOCATION</a></li>
-					<li><a href="#Contact_me">CONTACT ME</a></li>			
-				</ul>
-			</nav>
+<body class="site">
+
+	<header class="masthead">
+
+		<div class="div-logo">
+			<img src="logo.png" alt="Logo" id="logo" height="60">
+		</div>
+		<div class="div-menu-mob">
+			<img src="icons8-menu-30.png" alt="menu" id="menu-icon" onclick="myFunction()">
 		</div>
 	</header>
-	<div class="container">
-		<section id="ShowCase">
-					
-			<p>Reserved space for a Show Case</p>	
-		
-		</section>	
-		<section id="About_me">
-			<div class="main-col">
-				<div class="col-1">					
-					<p>Here we need one Gabrielle fancy image</p>			
+	<section class="nav">
+		<div id="myLinks">
+			<nav class="nav-menu">
+				<a href="index.html">HOME</a>
+				<a href="#About_me">ABOUT ME</a>
+				<a href="#Services">SERVICES</a>
+				<a href="#">LOCATION</a>
+				<a href="#Contact_me">CONTACT</a>
+			</nav>
+		</div>
+	</section>
+
+	<main class="main-area" id="main">
+		<section class="showcase">
+			<div class="div-showcase">
+				<div class="center">
+					BRAZILIAN WAX DEPILATION
 				</div>
-				<div class="col-2">
-				<p>My name is Gabriele Raffoul. I graduated from West End Academy and have 4 years of experience in the field of aesthetic medicine and non-medical aesthetics. I am Brazilian from the city of Cruzeiro SP, and even before I graduated from the aesthetic school, I already did certain treatments on friends and family.</p>
-				<p>I do this work with great affection and dedication with my clients. My specialization is exactly Brazilian wax, because the name itself already says a lot about the origin of this service, and really in Brazil this type of hair removal is very popular and the most requested by people. All my products and materials are natural and recyclable of first quality. Made in a clean and calm environment. I will be available for any questions that may arise.</p>
-				<p>Thanks.</p>			
-				</div>			
 			</div>
 		</section>
-		<section id="Services">
-			<div class="service">			
-				<p>Services</p>			
+		<section class="about_me">
+
+			<div class="div-about-picture">
+				<h1>About me</h1>
+				<figure>
+					<img src="./Gabriele1-final.png" alt="Gabriele Rauffoul" id="image">
+				</figure>
+			</div>
+			<div class="div-about-text">
+				My name is Gabriele Raffoul. I graduated from West End Academy and have 4 years of experience in the
+				field of aesthetic medicine and non-medical aesthetics. I am Brazilian from the city of Cruzeiro SP,
+				and even before I graduated from the aesthetic school, I already did certain treatments on friends
+				and family.<br><br>
+				I do this work with great affection and dedication with my clients. My specialization is exactly
+				Brazilian wax, because the name itself already says a lot about the origin of this service, and
+				really in Brazil this type of hair removal is very popular and the most requested by people. All my
+				products and materials are natural and recyclable of first quality. Made in a clean and calm
+				environment. I will be available for any questions that may arise.<br>
+				<br>
+				Thank you.
+				&nbsp;
+
+			</div>
+		</section>
+		<section class="services">
+			<div class="div-services">
+				<h1>Services</h1>
 				<div class="list-prices">
-					<div class="row">Under </div>
-					<div>$ 15</div>
-					<div>Tummt</div>
-					<div>$ 15</div>
-					<div>Half legs</div>
-					<div>$ 30</div>
-					<div>Half arms</div>
-					<div>$ 25</div>
-					<div>Chest</div>
-					<div>$ 40</div>
-					<div>Back</div>
-					<div>$ 40</div>
-					<div>Bikini</div>
-					<div>$ 25</div>
-					<div>Brazilian</div>
-					<div>$ 50</div>
-					<div>Full legs + Bikini</div>
-					<div>$ 70</div>
-					<div>Full legs</div>
-					<div>$ 50</div>
-					<div>Eyebrow</div>
-					<div>$ 15</div>
-					<div>Eyebrow + Upper lip</div>
-					<div>$ 35</div>
-					<div>Eyebrow + Upper lip + Chin</div>
-					<div>$ 35</div>
-					<div>Full Face 4 areas</div>
-					<div>$ 40</div>
-					<div>Upper Lip</div>
-					<div>$ 10</div>
-					<div>Upper Lip + Chin</div>
-					<div>$ 16</div>
-					<div>Side burn + Neck</div>
-					<div>$ 10</div>
-					<div>Upper Lip + Chin + Side Burn</div>
-					<div>$ 25</div>			
+					<span>Under</span>
+					<span>$ 15</span>
+					<span>Tummy</span>
+					<span>$ 15</span>
+					<span>Half legs</span>
+					<span>$ 30</span>
+					<span>Half arms</span>
+					<span>$ 25</span>
+					<span>Chest</span>
+					<span>$ 40</span>
+					<span>Back</span>
+					<span>$ 40</span>
+					<span>Bikini</span>
+					<span>$ 25</span>
+					<span>Brazilian</span>
+					<span>$ 50</span>
+					<span>Full legs + Bikini</span>
+					<span>$ 70</span>
+					<span>Full legs</span>
+					<span>$ 50</span>
+					<span>Eyebrow</span>
+					<span>$ 15</span>
+					<span>Eyebrow + Upper lip</span>
+					<span>$ 35</span>
+					<span>Eyebrow + Upper lip + Chin</span>
+					<span>$ 35</span>
+					<span>Full Face 4 areas</span>
+					<span>$ 40</span>
+					<span>Upper Lip</span>
+					<span>$ 10</span>
+					<span>Upper Lip + Chin</span>
+					<span>$ 16</span>
+					<span>Side burn + Neck</span>
+					<span>$ 10</span>
+					<span>Upper Lip + Chin + Side Burn</span>
+					<span>$ 25</span>
 				</div>
 			</div>
 		</section>
-		<section id="Contact_me">
+		<section class="contact">
 			<p>Contact me:</p>
-				<form>
-					<p>Name (required):<br/>
-					<input type="text"/></p>
-					<p>Email Address (required):<br/>
+			<form>
+				<p>Name (required):<br />
+					<input type="text" /></p>
+				<p>Email Address (required):<br />
 					<input type="email"></p>
-					<p>Message (required):<br/>
+				<p>Message (required):<br />
 					<input type="textarea" cols="5" row="5"></p>
-					<br/>
-					<button type="submit">Submit</button>
+				<br />
+				<button type="submit">Submit</button>
 			</form>
 		</section>
-	</div>	
-	<footer>
-		<p>RMC Webmaster, Copyright &copy; 2019</p>
-		<div class="footer-col">
-		
+	</main>
+	<footer class="colophon">
+		<div class="div-col-footer">
+			<p>Social Media Icons</p>
 		</div>
-		<div class="footer-col">
-		
-		</div>						
-	
+		<div class="div-col-footer">
+			<p>Address and Contact info</p>
+		</div>
+		<div class="div-col-footer">
+			<p>Credits</p>
+			<p>RMC Webmaster, Copyright &copy; 2019</p>
+		</div>
 	</footer>
 </body>
+<script type="text/javascript">
+
+	function myFunction() {
+		console.log("clicked")
+		var x = document.getElementById("myLinks")
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		} else {
+			x.style.display = "block";
+		}
+	}
+</script>
+
 </html>
