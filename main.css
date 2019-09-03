@@ -9,10 +9,12 @@ Global configuration - web for mobile
 	
 	display: grid;
 	color:#222;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Gayathri', sans-serif;;
 	font-size: 16px;
-	font-weight: lighter;
+	font-weight: 100;
 	line-height: 1.5em;
+	transition: all 0.4s;
+	letter-spacing: 2px;
 	
 }
 
@@ -20,26 +22,29 @@ Global configuration - web for mobile
 	
 	display: block;
 	text-align: center;
-	background-color:#cc003d;
 	margin-top: 0;
-	height: 100px;
+	height: 150px;
+	
 }
 
 .div-logo {
 
 	float: left;
-	margin: 15px;
+	margin-top: 10px;
+	margin-left: 0;
 	padding: 15px;
+	
 }
 
 .logo {
 
-	width: 100%;	
+	width: 100%;
+		
 }
 
 .div-menu-mob {
 	
-	margin-top: 30px;
+	margin-top: 90px;
 	margin-right: 10px;
 	float: right;
 	cursor: pointer;
@@ -102,28 +107,70 @@ Global configuration - web for mobile
 	  text-align: center;
 	  width: 100%;
   }
+
+  section .about {
+
+	display: grid;  
+	
+  }
+  
+  
+  .div-about-picture h1 {
+
+	text-align: center;
+	color: #000;  
+	padding-bottom: 15px;	  
+  }
+
   .div-about-picture {
-	  text-align: justify;
-	  color: #000;
-	  background-color:#cc003d;
+	  
 	  padding: 20px;
   }
 
-  .div-about-picture h1 {
-	  padding: 15px;
-	  text-align: center;
+  #image {
+	max-width: initial;
+	max-height: initial;
+  }
+
+  .div-about {
+	background-color: #f4c2c2;
+	padding-bottom: 40px;
   }
 
   .div-about-text {
-	text-align: justify;
-	color: #000;
-	background-color:#cc003d;
+	margin-right: 40px;
+	margin-left: 40px;
+	padding: 20px;
+	text-align: left;
+	background-color: #000;
+	color: #dbdbdb;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;
 	font-size: 18px;
-
   }
 
+.list-prices {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-left: 50px;
+	text-align: left;
+}
+
+.list-prices > span {
+	padding: 10px;
+	font-size: 14pt;
+	
+}
+
+.list-prices > span .description {
+	text-align: left;
+}
+
+.div-services h1 {
+	text-align: center;
+	color: #000;  
+	padding: 15px;	  
+  }
 
 
