@@ -1,58 +1,135 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*-----------------------
-Global configuration - web for mobile 
--------------------------*/
+/*---------------
+	Fonts 
+-----------------*/
 
-.site {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700&display=swap');
+
+/*---------------
+	Text
+----------------*/
+
+h1 {
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 500;
+}
+
+h2 {
+
+    margin: 0 0 .5em 0;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+h3 {
+    
+    margin: 0 0 .5em 0;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+h4 {
+    
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #007eff;
+}
+
+a:visited {
+    color: #65b1ff;
+}
+
+a.btn {
+
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #F3E8EB;
+    border: 1px solid #000;
+    padding: 5px 15px 5px 15px;
+    transition: background-color .5s;
+}
+
+a.btn:hover {
+    background-color: rgba(175, 42, 42, 0.3);
+    color: #d02fa2;
+}
+
+/*--------------------------
+	Global configuration  
+----------------------------*/
+
+body {
 	
-	display: grid;
-	color:#222;
-	font-family: 'Gayathri', sans-serif;;
-	font-size: 16px;
-	font-weight: 100;
+	color: #433E49;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	font-size: 16px;	
 	line-height: 1.5em;
-	transition: all 0.4s;
-	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;	
+	background-color: #F3E8EB;	
+}
+
+#page{
+	
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
 	
 }
 
-.masthead {
-	
-	display: block;
-	text-align: center;
-	margin-top: 0;
-	height: 150px;
-	
+/*----------------------
+ 	Header 
+ -----------------------*/
+
+header {
+
+	position: relative;		
+	height: 100px;				
+	background-color: #fff;
+	background: url('logo.png') no-repeat 0 0;
+	background-size: contain;
+	background-position: center;
+	background-color: #fff;
+
 }
 
-.div-logo {
 
-	float: left;
-	margin-top: 10px;
-	margin-left: 0;
-	padding: 15px;
-	
+header a.logo {
+
+	position: absolute;	
+	width: 141px;
+	height: 100px;	
+	background: url('logo.png') no-repeat 0 0;
+	background-size: contain;	
+	margin-left: auto;
+	margin-right: auto;	
+	display: none;
 }
 
-.logo {
-
-	width: 100%;
-		
+header a.logo span{
+	display: none;
 }
 
-.div-menu-mob {
-	
-	margin-top: 90px;
-	margin-right: 10px;
-	float: right;
-	cursor: pointer;
-}
+
 
 #menu-icon {
+	position: absolute;
+	width: auto;
+	height: 50px;
+	top: 50px;
 	
-	height: 45px;
 }
 
 #myLinks {
@@ -80,12 +157,14 @@ Global configuration - web for mobile
 }
 
 .div-showcase {	
+
 	position: relative;
 	height: 600px;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./21119.jpg');	
 	background-size: cover;
 	background-position: center;
-	}
+
+}
 
 .center {
 	position: absolute;	
@@ -94,10 +173,11 @@ Global configuration - web for mobile
 	text-align: center;
 	color: #fff;
 	line-height: 200%;
-	font-size: 30px;
+	letter-spacing: 0.4em;
+	font-size: 1.5em;
 	transform: translate(-50%, -50%);
 	padding: 30px;
-	border: 10px solid #fff;
+	border: 8px solid #fff;
 	font-weight: bold;
   }
 
@@ -105,6 +185,7 @@ Global configuration - web for mobile
 
 	  height: auto;
 	  text-align: center;
+	  max-width: 500px;
 	  width: 100%;
   }
 
@@ -125,15 +206,10 @@ Global configuration - web for mobile
   .div-about-picture {
 	  
 	  padding: 20px;
-  }
-
-  #image {
-	max-width: initial;
-	max-height: initial;
-  }
+  }  
 
   .div-about {
-	background-color: #f4c2c2;
+	
 	padding-bottom: 40px;
   }
 
@@ -142,12 +218,12 @@ Global configuration - web for mobile
 	margin-left: 40px;
 	padding: 20px;
 	text-align: left;
-	background-color: #000;
-	color: #dbdbdb;
+	background-color:  #928490;
+	color: #DBC1AD;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;
-	font-size: 18px;
+	
   }
 
 .list-prices {
@@ -172,5 +248,5 @@ Global configuration - web for mobile
 	color: #000;  
 	padding: 15px;	  
   }
-
-
+  @media only screen and (max-width: 768px) {
+}
