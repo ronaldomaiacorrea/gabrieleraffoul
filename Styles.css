@@ -358,40 +358,48 @@ html {
 
 body {
   background-color: #fff;
-  color: #5d5c61;
+  color: #8E8D8A;
   font-size: 16px;
   line-height: 1.5em;
   font-family: "Quicksand", sans-serif;
 }
 
-#page {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-}
-
 /* Header */
 
 header {
-  position: relative;
-  background-color: #7395ae;
-  border-bottom: 1px solid #7395ae;
-  box-shadow: 0px 2px 6px #7395ae;
-  -webkit-box-shadow: 0px 2px 6px #7395ae;
-  -moz-box-shadow: 0px 2px 6px #7395ae;
-  height: 100px;
+  background-color: #eae7dc;
+  border-bottom: 1px solid #e85a4f;
+  box-shadow: 0px 2px 6px #e85a4f;
+  -webkit-box-shadow: 0px 2px 6px #e85a4f;
+  -moz-box-shadow: 0px 2px 6px #e85a4f;
   width: 100%;
+  height: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  height: 100px;
+  
+}
+
+.container-ab {
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+
 }
 
 header #logo {
-  position: relative;
-  color: #fff;
-  width: auto;
-  display: block;
-  top: 17px;
-  left: 20px;
-  float: left;
-  padding-right: 10px;
+  grid: 1/2;
+  text-align: left;
+  align-self: center;
+  display: inline-block;
+  margin-left: 20px;  
+  color: #e85a4f;
+  
 }
 
 #logo p {
@@ -401,17 +409,18 @@ header #logo {
   font-weight: bold;
 }
 
-nav {
-  float: right;
-  position: relative;
-  top: 40px;
-  right: 15px;
+nav#icon-nav {
+  grid: 2/3;
+  text-align: center;
+  align-self: center;
+  
 }
 
 /* Menu mobile */
 
 nav i {
   cursor: pointer;
+  color: #e85a4f;  
 }
 
 nav#top-nav {
@@ -466,16 +475,20 @@ section h1 {
 
 /* Section show-case */
 
+.about {
+  background:#e85a4f;
+}
+
 .show-case {
   position: relative;
   background-color: #7395ae;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/gabrieleraffoul/21119.jpg");
+    url("21119.jpg");
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 900px;
   width: 100%;
-  max-width: 1200px;
+  
 }
 
 #center {
@@ -483,31 +496,30 @@ section h1 {
   top: 50%;
   left: 50%;
   text-align: center;
-  color: #fff;
+  color: #eae7dc;
   line-height: 200%;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.3em;
   font-family: "Cinzel", serif;
-  font-size: 1.5em;
+  font-size: 25px;
   transform: translate(-50%, -50%);
   padding: 30px;
-  border: 8px solid #fff;
+  border: 8px solid #d8c3a5;
   font-weight: 700;
 }
 
 /* Section About me */
 
 section.about {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+ background-color: #e98074;
+ color: #eae7dc;
+ width: 100%;
+ height: auto;
+ padding: 20px 0 40px 0; 
 }
 
-section.about.image {
+.image {
   position: relative;
   width: 100%;
-  margin: 0 auto;
 }
 
 .avatar {
@@ -519,7 +531,8 @@ section.about.image {
 
 .text blockquote {
   font-size: 1.1em;
-  color: #ff00c0;
+  color: #eae7dc;
+  font-weight: 700;
 }
 
 blockquote::before {
@@ -528,12 +541,13 @@ blockquote::before {
   font-family: serif;
   content: "\201C";
   font-size: 5em;
+  
   color: #d2bd65;
 }
 
 cite {
-  position: relative;
-  left: 30%;
+  
+  text-align: right;
   font-family: "Allura", cursive;
   font-size: 1.7em;
   font-weight: bold;
@@ -576,7 +590,7 @@ footer {
   position: relative;
   background-color: #7395ae;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/gabrieleraffoul/footer.jpg");
+    url("footer.jpg");
   background-size: cover;
   color: #fff;
   background-position: center;
