@@ -367,7 +367,7 @@ body {
 /* Header */
 
 header {
-  background-color: #eae7dc;
+  background-color: #fff;
   border-bottom: 1px solid #e85a4f;
   box-shadow: 0px 2px 6px #e85a4f;
   -webkit-box-shadow: 0px 2px 6px #e85a4f;
@@ -486,7 +486,7 @@ section h1 {
     url("21119.jpg");
   background-size: cover;
   background-position: center;
-  height: 900px;
+  height: 800px;
   width: 100%;
   
 }
@@ -510,16 +510,23 @@ section h1 {
 /* Section About me */
 
 section.about {
- background-color: #e98074;
- color: #eae7dc;
+ background-color: #eae7dc;
+ color: #264653;
  width: 100%;
  height: auto;
- padding: 20px 0 40px 0; 
+ padding: 10px 0 60px 0; 
+}
+
+.container-ab {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: center; 
+  align-items: center;
 }
 
 .image {
-  position: relative;
-  width: 100%;
+  justify-self: center;   
 }
 
 .avatar {
@@ -531,33 +538,33 @@ section.about {
 
 .text blockquote {
   font-size: 1.1em;
-  color: #eae7dc;
+  color: #264653;
   font-weight: 700;
+  padding: 20px;
 }
 
 blockquote::before {
-  display: block;
-  position: relative;
+  display: block;  
   font-family: serif;
   content: "\201C";
-  font-size: 5em;
-  
-  color: #d2bd65;
+  font-size: 5em;  
+  color: #e85a4f;
 }
 
 cite {
-  
+  display: block;
   text-align: right;
+  padding-right: 30px;
   font-family: "Allura", cursive;
   font-size: 1.7em;
   font-weight: bold;
-  color: #d2bd65;
-  padding-bottom: 50px;
+  color: #e85a4f;
+  
 }
 
 cite::before {
   content: "\2014 \2009";
-  color: #d2bd65;
+  color: #e85a4f;
 }
 
 /* Section Services */
@@ -568,6 +575,7 @@ cite::before {
   margin-left: 22%;
   grid-template-columns: repeat(2, 4fr);
   width: 80%;
+  color: #264653;
 }
 
 .list-prices > span {
